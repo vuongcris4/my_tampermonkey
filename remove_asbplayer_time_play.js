@@ -33,5 +33,5 @@ var timer = setInterval(function() {
         
         clearInterval(timer);
     }
- }, 500);
+ }, 1000);
 
