@@ -8,8 +8,15 @@
 // @grant        none
 // ==/UserScript==
 
+var runTime=0;
 var timer = setInterval(function () {
+  runTime +=1;
+  if (runTime==20){
+    clearInterval(timer);
+  }
+
   x = document.getElementsByClassName("migaku-toolbar-container-element")[0];
+
   if (x.className == 'migaku-toolbar-container-element') {
     x.style.display = 'none';
 
