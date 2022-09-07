@@ -32,12 +32,12 @@ var timer = setInterval(function () {
         catch (err) {
         }
 
-        document.addEventListener('keydown', (e) => {   //select movie button
-            if (e.key.toLowerCase() === 'v') {
-                ele = document.getElementsByClassName("MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit")[1];
-                ele.click();
-            }
-        });
+        // document.addEventListener('keydown', (e) => {   //select movie button
+        //     if (e.key.toLowerCase() === 'v') {
+        //         ele = document.getElementsByClassName("MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit")[1];
+        //         ele.click();
+        //     }
+        // });
 
         clearInterval(timer);
     }
