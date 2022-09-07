@@ -19,6 +19,8 @@ var timer = setInterval(function () {
         x.click();
       } else {
         x.style.display = 'none';
+        ele = document.getElementById("migaku-toolbar-minimize"); //minimize toolbar
+        ele.click();
       }
     }
 
