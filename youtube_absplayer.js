@@ -8,4 +8,4 @@
 // @grant        none
 // ==/UserScript==
 
-window.open("btt://trigger_named/?trigger_name=asbplayer"); //Run better touch tool script
+window.open("btt://trigger_named/?trigger_name=asbplayer", "_self"); //Run better touch tool script
