@@ -8,33 +8,38 @@
 // @grant        none
 // ==/UserScript==
 
-var timer = setInterval(function() { 
+var timer = setInterval(function () {
     elem = document.getElementsByClassName("MuiGrid-root jss70 MuiGrid-container")[0];
-    if (elem.className=='MuiGrid-root jss70 MuiGrid-container') {
+    if (elem.className == 'MuiGrid-root jss70 MuiGrid-container') {
 
         elem.style.display = "none";    // hide time play
 
         elem1 = document.getElementsByClassName("jss84"); // Time info
-        for (const ele of elem1){
+        for (const ele of elem1) {
             ele.style.display = "none";
         }
 
         elem1 = document.getElementsByClassName("jss85"); // Copy info
-        for (const ele of elem1){
+        for (const ele of elem1) {
             ele.style.display = "none";
         }
 
-        ele = document.getElementById("migaku-toolbar-po-parse");   // Parse migaku
-        ele.click();
+        try {
+            ele = document.getElementById("migaku-toolbar-po-parse");   // Parse migaku
+            ele.click();
+
+        }
+        catch (err) {
+        }
 
         document.addEventListener('keydown', (e) => {   //select movie button
-            if (e.key.toLowerCase() === 'v' ) {
+            if (e.key.toLowerCase() === 'v') {
                 ele = document.getElementsByClassName("MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit")[1];
                 ele.click();
             }
         });
-        
+
         clearInterval(timer);
     }
- }, 1000);
+}, 1000);
 
