@@ -17,7 +17,7 @@ var timer = setInterval(function () {
 
   x = document.getElementsByClassName("migaku-toolbar-container-element")[0];
 
-  if (x.className == 'migaku-toolbar-container-element') {
+  if (x.className.includes('migaku-toolbar-container-element')) {
     x.style.display = 'none';
 
     function toggle_migaku() {
